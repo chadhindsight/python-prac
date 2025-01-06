@@ -1,2 +1,3 @@
 print("Hello world!")
-print( 5 // 2)
+
+# NB: None is Python's version of null
