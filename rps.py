@@ -33,3 +33,6 @@ elif player == "scissors":
 		print("computer wins!")	
 else:
 	print("Please enter a valid move!")
+
+	for deez in range(2, 28):
+		print('I am wasting my time')
