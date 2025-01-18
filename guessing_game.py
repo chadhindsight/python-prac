@@ -1,14 +1,21 @@
-player_choice = input("Guess a number between 1 and 10: ")
+from random import randint
 
-# NB: randint is inclusive, not exclusive 
+player_choice = int(input("Guess a number between 1 and 10: "))
 computer_choice = randint(1, 10)
 keep_going = True
 
-while(keep_going == True):
+
+while(keep_going):
     if(player_choice == computer_choice):
         print("Wow, you and the machine are on the same wavelength")
-        
     elif(player_choice > computer_choice):
         print("You guessed too high!")
     else:
-        print("You guessed too low!")        
+        print("You guessed too low!")
+        
+    cont = input("Keep going? y or n: ")
+    if cont.lower() != 'y':
+        keep_going = False
+    else:
+        player_choice = int(input("Guess a number between 1 and 10: "))
+        computer_choice = randint(1, 10) 
