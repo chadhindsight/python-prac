@@ -1,5 +1,6 @@
 from random import randint
 
+# Computer choices
 player = input("Player, make your move: ").upper()
 rand_num = randint(0,2)
 if rand_num == 0:
