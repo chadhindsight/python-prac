@@ -9,7 +9,6 @@ elif rand_num == 1:
 	computer = "paper"
 else:
 	computer = "scissors"
-
 print(f"Computer plays {computer}" )
 
 if player == computer:
