@@ -30,3 +30,8 @@ instructors.insert(0, 'Done')
 
 # Example of swapping values 
 # sounds[1], sounds[3] = sounds[3], sounds[1] 
+
+#Example of List comprehension
+numbers = [34, 50, 78, 100, 61]
+
+doubleUp = [number * 2 for number in numbers]
