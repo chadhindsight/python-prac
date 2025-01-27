@@ -13,7 +13,7 @@ while(keep_going):
         print("You guessed too low!")
         
     cont = input("Keep going? y or n: ")
-    if cont.lower() != 'n' or cont.lower() != 'no':
+    if (cont.lower() == 'n' or cont.lower() == 'no'):
         keep_going = False
     else:
         player_choice = int(input("Guess a number between 1 and 10: "))
