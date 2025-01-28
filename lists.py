@@ -32,6 +32,6 @@ instructors.insert(0, 'Done')
 # sounds[1], sounds[3] = sounds[3], sounds[1] 
 
 #Example of List comprehension
-numbers = [34, 50, 78, 100, 61]
+numbers = [34, 50, 78, 100, 60]
 
 doubleUp = [number * 2 for number in numbers]
