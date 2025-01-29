@@ -5,10 +5,6 @@ result = ""
 for sound in sounds:
     result += sound.upper()
 
-
-
-
-
 # Changing/Manipulating vals in lists
 # Create a list called instructors
 instructors = []
