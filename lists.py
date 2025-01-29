@@ -35,3 +35,4 @@ instructors.insert(0, 'Done')
 numbers = [34, 50, 78, 100, 60]
 
 doubleUp = [number * 2 for number in numbers]
+print(doubleUp)
