@@ -25,3 +25,7 @@ for val in donations.values():
     total_donations += val
 
 print(total_donations)    
+
+# Example of how to check if something is in a dictionary
+"name" in user_info.keys() 
+"Koya" in user_info.values()
