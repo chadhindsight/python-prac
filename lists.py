@@ -33,7 +33,7 @@ numbers = [34, 50, 78, 100, 60]
 
 doubleUp = [number * 2 for number in numbers]
 
-answer1 = [val for val in [1,2,3,4] if val in [3,4,5,6]]
+answer1 = [val for val in numbers if val in [3, 78, 50, 6]] 
 
 #the slice [::-1] is a quick way to reverse a string
 answer2 = [val[::-1].lower() for val in ["Elie", "Tim", "Matt"]]
