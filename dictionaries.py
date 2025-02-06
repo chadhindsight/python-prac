@@ -18,13 +18,13 @@ donations = dict(sam=25.0, lena=88.99, chuck=13.0, linus=99.5, stan=150.0, lisa=
 # DON'T TOUCH PLEASE!
 
 
-# Use a loop to add together all the donations and store the resulting number in a variable called total_donations
-total_donations = 0 
+# Use a loop to add together all the donations and store the resulting number in a variable called donations_total
+donations_total = 0 
 
 for val in donations.values():
-    total_donations += val
+    donations_total += val
 
-print(total_donations)    
+print(donations_total)    
 
 # Example of how to check if something is in a dictionary
 "name" in user_info.keys() 
