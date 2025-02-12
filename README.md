@@ -1,3 +1,3 @@
 # Python Practice
 
-This is a collection of exercises done in the Python language. Some files are solution code for exercises found on [exercism.org's](https://exercism.org/tracks/python/concepts) Python course.
+This is a collection of exercises done in the Python3 language. Some files have solution code for exercises found on [Colt Steele's](https://www.udemy.com/course/the-modern-python3-bootcamp/learn) Python course.
