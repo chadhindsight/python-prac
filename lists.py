@@ -28,7 +28,7 @@ instructors.insert(0, 'Done')
 # Example of swapping values 
 sounds[1], sounds[3] = sounds[3], sounds[1] 
 
-#Example of List comprehension
+#Example of List comprehension(basic syntax: [val for val in val])
 numbers = [34, 50, 78, 100, 60]
 
 doubleUp = [number * 2 for number in numbers]

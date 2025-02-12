@@ -40,5 +40,5 @@ stock_list = inventory.copy()
 stock_list['cookie'] = 18
 
 
-# remove 'cake' from stock_list USE A DICTIONARY METHOD
+# remove 'cake' from stock_list (USE A DICTIONARY METHOD)
 stock_list.pop('cake')
