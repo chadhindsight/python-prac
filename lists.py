@@ -36,7 +36,7 @@ doubleUp = [number * 2 for number in numbers]
 answer1 = [val for val in numbers if val in [3, 78, 50, 6]] 
 
 #the slice [::-1] is a quick way to reverse a string
-answer2 = [val[::-1].lower() for val in ["Elie", "Tim", "Matt"]]
+answer2 = [val[::-1].lower() for val in ["Elie", "Nicole", "Matt"]]
 
 # create a variable called answer, which contains a list with all the numbers that are divisible by 12.
 answer3 =  [ val for val in range(1, 101) if (val % 12 == 0)]
