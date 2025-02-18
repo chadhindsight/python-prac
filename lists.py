@@ -32,7 +32,8 @@ sounds[1], sounds[3] = sounds[3], sounds[1]
 numbers = [34, 50, 78, 100, 60]
 
 doubleUp = [number * 2 for number in numbers]
-
+tripleUp = [number * 3 for number in numbers]
+            
 answer1 = [val for val in numbers if val in [3, 78, 50, 6]] 
 
 #the slice [::-1] is a quick way to reverse a string
@@ -44,3 +45,4 @@ answer3 =  [ val for val in range(1, 101) if (val % 12 == 0)]
 # This remove all vowels from the word "amazing"
 answer4 = [char for char in "amazing" if char not in "aeiouAEIOU"]
 
+print(tripleUp)
