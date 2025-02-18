@@ -42,3 +42,11 @@ stock_list['cookie'] = 18
 
 # remove 'cake' from stock_list (USE A DICTIONARY METHOD)
 stock_list.pop('cake')
+
+# Dictionary comprehension {__:__ for __ in __}
+# Dictionary comprehension iterates through keys by default
+# to iterate over keys and values, use .items()
+
+# Conditional logic with dictionary comprehension
+num_list = [2, 4, 6, 12]
+{num: ("even" if num % 2 == 0 else "odd") for num in num_list}
