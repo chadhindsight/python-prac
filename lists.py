@@ -3,7 +3,7 @@ sounds = ["super", "cali", "fragil", "istic", "expi", "ali", "docious"]
 result = ""
 
 for sound in sounds:
-    result += sound.upper()
+    result += sound.lower()
 
 # Changing/Manipulating vals in lists
 # Create a list called instructors
