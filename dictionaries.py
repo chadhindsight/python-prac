@@ -45,6 +45,11 @@ stock_list.pop('cake')
 
 # Dictionary comprehension {__:__ for __ in __}
 # Dictionary comprehension iterates through keys by default
+list1 = ["CA", "NJ", "RI"]
+list2 = ["California", "New Jersey", "Rhode Island"]
+
+answer = {list1[i]: list2[i] for i in range(len(list2))}
+
 # to iterate over keys and values, use .items()
 
 # Conditional logic with dictionary comprehension
