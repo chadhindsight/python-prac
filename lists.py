@@ -44,4 +44,3 @@ answer3 =  [ val for val in range(1, 101) if (val % 12 == 0)]
 # This remove all vowels from the word "amazing"
 answer4 = [char for char in "amazing" if char not in "aeiouAEIOU"]
 
- 
