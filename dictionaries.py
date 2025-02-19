@@ -55,3 +55,5 @@ answer = {list1[i]: list2[i] for i in range(len(list2))}
 # Conditional logic with dictionary comprehension
 num_list = [2, 4, 6, 12]
 {num: ("even" if num % 2 == 0 else "odd") for num in num_list}
+
+answer = {char:0 for char in 'aeiou'}
