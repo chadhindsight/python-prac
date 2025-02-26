@@ -1,6 +1,6 @@
 # NB: Tuples use () instead of []
 
-# NB: Tuples are faster than Lists and are immutable
+# NB: Tuples are faster than Lists and are also immutable
 
 # Example of looping in a Tuple
 names = ('Koya', 'Dollie', 'Devin')
