@@ -19,8 +19,14 @@ t.count(12) # returns the number of times a value appears in a tuple
 s = set({4,5,6})
 
 # Another way of creating a set
-vals = {'Bayley', 'Jordynne', 'Io Sky'}
+vals = {'Bayley', 'Jordynne Grace', 'Io Sky'}
 
 # Accessing all values in a set
 for val in vals:
     print(val) 
+
+# Set Methods
+vals.add('Queen Aminata')
+vals.remove('Jordynne Grace') # Will throw an error if the item is not in set
+vals_copy = vals.copy() # Makes a copy of the set
+vals.clear() # remove all items from the set
