@@ -15,3 +15,8 @@ t.index(1) # returns the index at which a value is found in a tuple
 t.count(12) # returns the number of times a value appears in a tuple
 
 ##### SETS #####
+# Sets are a collection of data that do not have duplicate values, Elements in sets aren't ordered.
+s = set({4,5,6})
+
+# Another way of creating a set
+vals = {'Bayley', 'Jordynne', 'Io Sky'}
