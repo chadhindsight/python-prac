@@ -20,3 +20,7 @@ s = set({4,5,6})
 
 # Another way of creating a set
 vals = {'Bayley', 'Jordynne', 'Io Sky'}
+
+# Accessing all values in a set
+for val in vals:
+    print(val) 
