@@ -1,5 +1,4 @@
 # NB: Tuples use () instead of []
-
 # NB: Tuples are faster than Lists and are also immutable
 
 # Example of looping in a Tuple
@@ -44,3 +43,6 @@ stuff = [1,3,1,5,2,5,1,2,5]
 
 # Create a variable called unique_stuff which is a set of only the unique values in the stuff list
 unique_stuff = set(stuff)
+
+# Set Comprehension
+{num ** 2 for num in range(5)}
