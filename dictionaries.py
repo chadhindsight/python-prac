@@ -3,7 +3,6 @@ user_info = {
     "age": 7,
     "is_cute": True
 }
-
 # Accessing values
 artist = {
     "first": "Neil",
