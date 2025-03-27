@@ -20,3 +20,6 @@ def increment():
 print(increment()) # 1
 print(increment()) # 2
 print(increment()) # 3
+
+def single_letter_count(string,letter):
+    return string.lower().count(letter.lower())
