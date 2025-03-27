@@ -25,3 +25,5 @@ def single_letter_count(string,letter):
     return string.lower().count(letter.lower())
 
 # Same, but for multiple letters
+def multiple_letter_count(string):
+    return {letter: string.count(letter) for letter in string}
