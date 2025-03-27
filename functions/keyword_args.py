@@ -23,3 +23,5 @@ print(increment()) # 3
 
 def single_letter_count(string,letter):
     return string.lower().count(letter.lower())
+
+# Same, but for multiple letters
