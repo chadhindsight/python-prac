@@ -36,9 +36,10 @@ feed_me("apple", "tire", "shoe", "salmon")
 
 
 # **KWARGS: gathers remaining arguments as a dictionary
-def contains_purple(**kwargs):
-    for val in kwargs:
-        if "purple" in kwargs:
-            return True
-        
-        return False   
+def fav_colors(**kwargs):
+	for person, color in kwargs.items():
+		print(f"{person}'s favorite color is {color}")
+
+fav_colors(colt="purple", ruby="red", ethel="teal")
+fav_colors(colt="purple", ruby="red", ethel="teal", ted="blue")
+fav_colors(colt="royal deep amazing purple")  
