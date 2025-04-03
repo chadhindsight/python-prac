@@ -29,3 +29,7 @@ def multiple_letter_count(string):
     return {letter: string.count(letter) for letter in string}
 
 # *ARGS: gathers remaining arguments as a tuple
+def feed_me(*stuff):
+	for thing in stuff:
+		print(f"YUMMY I EAT {thing}")
+feed_me("apple", "tire", "shoe", "salmon")
