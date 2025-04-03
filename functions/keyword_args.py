@@ -33,3 +33,12 @@ def feed_me(*stuff):
 	for thing in stuff:
 		print(f"YUMMY I EAT {thing}")
 feed_me("apple", "tire", "shoe", "salmon")
+
+
+# More *ARGS: return True if *args has the word "purple" 
+def contains_purple(*args):
+    for val in args:
+        if "purple" in args:
+            return True
+        
+        return False   
