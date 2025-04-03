@@ -35,10 +35,10 @@ def feed_me(*stuff):
 feed_me("apple", "tire", "shoe", "salmon")
 
 
-# More *ARGS: return True if *args has the word "purple" 
-def contains_purple(*args):
-    for val in args:
-        if "purple" in args:
+# **KWARGS: gathers remaining arguments as a dictionary
+def contains_purple(**kwargs):
+    for val in kwargs:
+        if "purple" in kwargs:
             return True
         
         return False   
