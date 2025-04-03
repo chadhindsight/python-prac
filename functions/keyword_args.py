@@ -27,3 +27,5 @@ def single_letter_count(string,letter):
 # Same, but for multiple letters
 def multiple_letter_count(string):
     return {letter: string.count(letter) for letter in string}
+
+# *ARGS: gathers remaining arguments as a tuple
