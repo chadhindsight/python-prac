@@ -43,3 +43,6 @@ def fav_colors(**kwargs):
 fav_colors(colt="purple", ruby="red", ethel="teal")
 fav_colors(colt="purple", ruby="red", ethel="teal", ted="blue")
 fav_colors(colt="royal deep amazing purple")  
+
+# Tuple unpacking:
+# NB: parameter ordering when mixing all this together: 1. params, 2. *args, 3. default params, 4. **kwargs
