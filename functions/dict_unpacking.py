@@ -13,4 +13,4 @@ def add_and_multiply_numbers(a,b,c,**kwargs):
 
 data = dict(a=1,b=2,c=3,d=55,name="Tony")
 
-add_and_multiply_numbers(**data) # 7
+add_and_multiply_numbers(**data) 
