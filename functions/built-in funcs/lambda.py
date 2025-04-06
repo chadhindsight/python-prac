@@ -7,6 +7,9 @@ square2 = lambda num: num * num
 # Another lambda
 add = lambda a,b: a + b
 
+# Write a lambda that accepts a single number and cubes it. Save it in a variable called cube.
+cube = lambda num: num ** 3
+
 # Executing the lambdas
 print(square2(7))
 print(add(3,10))
