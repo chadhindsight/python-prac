@@ -6,8 +6,8 @@ names = {"first": "Colt", "second": "Rusty"}
 display_names(names) # nope..
 display_names(**names)  # yup!
 
-def add_and_multiply_numbers(a,b,c,**kwargs):
-    print(a + b * c)
+def add_and_multiply_numbers(val1,val2,val3,**kwargs):
+    print(val1 + val2 * val3)
     print("OTHER STUFF....")
     print(kwargs)
 
