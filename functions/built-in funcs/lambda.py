@@ -1,7 +1,7 @@
 # A regular named function
 def square(num): return num * num
 
-# An equivalent lambda, saved to a variable
+# An equivalent lambda, saved to a variable. NB: lambda's are similar to anonymous functions in JS
 square2 = lambda num: num * num
 
 # Another lambda
