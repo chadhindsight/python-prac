@@ -2,7 +2,7 @@ def display_names(first, second):
     print(f"{first} says hello to {second}")
 names = {"first": "Colt", "second": "Rusty"}
 
-display_names(names) # nope..
+# display_names(names) # nope..
 display_names(**names)  # yup!
 
 def add_and_multiply_numbers(val1,val2,val3,**kwargs):
@@ -10,7 +10,7 @@ def add_and_multiply_numbers(val1,val2,val3,**kwargs):
     print("OTHER STUFF....")
     print(kwargs)
 
-data = dict(a=1,b=2,c=3,d=55,name="Tony")
+data = dict(val1=1,val2=2,val3=3,d=55,name="Tony")
 
 add_and_multiply_numbers(**data) 
 
