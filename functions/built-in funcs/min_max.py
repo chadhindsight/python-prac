@@ -13,7 +13,7 @@ songs = [
 	{"title": "Toxic", "playcount": 31}
 ]
 
-# Finds the song with the lowerest playcount
+# Finds the song with the lowest playcount
 min(songs, key=lambda s: s['playcount']) #{"title": "happy birthday", "playcount": 1}
 
 # Finds the title of the most played song
