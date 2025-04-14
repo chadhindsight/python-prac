@@ -34,6 +34,9 @@ def feed_me(*stuff):
 		print(f"YUMMY I EAT {thing}")
 feed_me("apple", "tire", "shoe", "salmon")
 
+# return the sum of all the arguments that are divisible by 2. If there are no numbers divisible by 2, return 0
+def sum_even_values(*args):
+    return sum(arg for arg in args if arg % 2 == 0)
 
 # **KWARGS: gathers remaining arguments as a dictionary
 def fav_colors(**kwargs):
