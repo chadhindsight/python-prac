@@ -1,4 +1,4 @@
-names = ['Arya', "Samson", "Dora", "Tim", "Ollivander"]
+names = ["Arya", "Samson", "Dora", "Tim", "Ollivander"]
 
 # finds the minimum length of a name in names
 min(len(name) for name in names) # 3
@@ -14,7 +14,7 @@ songs = [
 ]
 
 # Finds the song with the lowest playcount
-min(songs, key=lambda s: s['playcount']) #{"title": "happy birthday", "playcount": 1}
+min(songs, key=lambda s: s["playcount"]) #{"title": "happy birthday", "playcount": 1}
 
 # Finds the title of the most played song
-max(songs, key=lambda s: s['playcount'])['title'] #YMCA
+max(songs, key=lambda s: s["playcount"])["title"] #YMCA
