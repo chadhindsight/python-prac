@@ -16,10 +16,10 @@ instructors = []
 instructors.extend(["Colt", "Blue", "Lisa"])
 instructors.append("Jessica") 
 
-# Remove the last value in the list
+#   Remove the last value in the list
 instructors.pop()
  
-# Remove the first value in the list
+# Remove the first value from the list
 instructors.pop(0)
  
 # Add the string "Done" to the beginning of the list
