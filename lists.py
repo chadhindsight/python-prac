@@ -23,8 +23,8 @@ instructors.pop()
 instructors.pop(0)
  
 # Add the string "Done" to the beginning of the list
-instructors.insert(4, 'Done')
-print(instructors)
+instructors.insert(0, 'Done')
+
 # Example of swapping values 
 sounds[1], sounds[3] = sounds[3], sounds[1] 
 
