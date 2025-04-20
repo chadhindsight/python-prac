@@ -13,6 +13,7 @@ cube = lambda num: num ** 3
 # Executing the lambdas
 print(square2(7))
 print(add(3,10))
+print(cube(4))
 
 # Notice that the square function has a name, but the two lambdas do not
 print(square.__name__)
