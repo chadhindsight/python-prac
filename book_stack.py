@@ -11,7 +11,6 @@ print("Here are the books listed in our stack:", stack_of_books)
 # print(stack_of_books.pop())
 print("The following book was removed from our stack:", stack_of_books.pop()) 
 
-#  "Animal Farm"
 # "Of Mice and Men"
 # "To Kill a Mockingbird"
 # "1984"
