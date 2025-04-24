@@ -14,7 +14,7 @@ def decodeString(s: str):
 
         elif char == "]":
             popped_vals = stack.pop()
-            current_string = popped_vals[0]+ current_string * popped_vals[1]  
+            current_string = popped_vals[0] + current_string * popped_vals[1]  
         
         else: 
             current_string += char 
