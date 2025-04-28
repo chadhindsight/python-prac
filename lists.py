@@ -15,7 +15,7 @@ instructors = []
     # "Lisa"
 instructors.extend(["Colt", "Blue", "Lisa"])
 instructors.append("Jessica") 
-
+print('sd', instructors)
 #   Remove the last value in the list
 instructors.pop()
  
