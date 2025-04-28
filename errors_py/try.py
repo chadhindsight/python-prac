@@ -39,32 +39,3 @@ print("REST OF GAME LOGIC RUNS!")
 # 	print("I'M IN THE ELSE!")
 # finally:
 # 	print("RUNS NO MATTER WHAT!")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# try:
-# except:
-# else:
-# finally:
