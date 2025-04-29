@@ -25,7 +25,7 @@ while True:
 	except ValueError:
 		print("That's not a number!")
 	else:
-		print("Good job, you entered a number!")
+		print("Good job, you entered a great number!")
 		break
 	finally:
 		print("RUNS NO MATTER WHAT!")
