@@ -55,7 +55,7 @@ num_list = [2, 4, 6, 12]
 {num: ("even" if num % 2 == 0 else "odd") for num in num_list}
 
 # Create a dictionary with the key as a vowel in the alphabet and the value as 0. Your dictionary should look like this {'a': 0, 'e': 0, 'i': 0, 'o': 0, 'u': 0}.
-answer = {char:0 for char in 'aeiou'}
+answer = {char:0 for char in 'aeiouAEIOU'}
 
 # Create dictionary that maps ASCII keys to their corresponding letters.  Use a dictionary comprehension and chr()
 answer =  {i: chr(i) for i in range(65,91)}
