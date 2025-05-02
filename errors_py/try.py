@@ -17,7 +17,15 @@ d = {"name": "Ricky"}
 print(get(d, "city"))
 d["city"]
 
-
+def grass(deez, key):
+	try:
+		return deez[key]
+	except KeyError:
+		return "rather not be here"
+	else:
+		print("Good job, you entered a great number!")
+	finally:
+		print("The ROck has come back to yada yada yada yada")
 
 while True:
 	try:
