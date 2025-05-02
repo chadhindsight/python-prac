@@ -15,7 +15,7 @@ def get(d,key):
 		return None
 d = {"name": "Ricky"}
 print(get(d, "city"))
-d["city"]
+
 
 while True:
 	try:
