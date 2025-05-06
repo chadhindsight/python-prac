@@ -48,7 +48,7 @@ list2 = ["California", "New Jersey", "Rhode Island"]
 
 answer = {list1[i]: list2[i] for i in range(len(list2))}
 
-# NB: to iterate over keys and values, use .items()
+# NB: to iterate over keys and values together, use .items()
 
 # Conditional logic with dictionary comprehension
 num_list = [2, 4, 6, 12]
