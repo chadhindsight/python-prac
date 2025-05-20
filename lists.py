@@ -40,7 +40,7 @@ answer1 = [val for val in numbers if val in [3, 78, 50, 6, 12, 22]]
 answer2 = [val[::-1].lower() for val in ["Elie", "Nicole", "Matt"]]
 
 # create a variable called answer, which contains a list with all the numbers that are divisible by 12.
-answer3 =  [ val for val in range(1, 101) if (val % 12 == 0)]
+answer3 = [ val for val in range(1, 101) if (val % 12 == 0)]
 
 # This remove all vowels from the word "amazing"
 answer4 = [char for char in "amazing" if char not in "aeiouAEIOU"]
