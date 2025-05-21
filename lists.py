@@ -16,7 +16,7 @@ instructors = []
 instructors.extend(["Colt", "Blue", "Lisa"])
 instructors.append("Jessica") 
 
-#   Remove the last value in the list
+# Remove the last value in a list
 instructors.pop()
  
 # Remove the first value from the list
