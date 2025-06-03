@@ -1,4 +1,4 @@
-# Define Bank Account Below:
+# Define Bank Account class:
 class BankAccount:
     def __init__(self, owner, balance =0.0):
         self.owner = owner
