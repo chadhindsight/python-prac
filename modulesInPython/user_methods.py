@@ -34,7 +34,7 @@ print(user1.initials())
 print(user2.is_senior())
 print(user1.age) #Print age before we update it
 print(user1.birthday()) #updates age
-print(user1.age) #Print new value of age
+print(user1.age)
 
 
 
