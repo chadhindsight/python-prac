@@ -65,15 +65,27 @@ def partition(arr, low, high):
 ### Coin Change (US coins only)
 **Time:** O(1)
 ```python
-def coin_change(amount):
-    coins = [25, 10, 5, 1]
-    count = 0
-    
-    for coin in coins:
-        count += amount // coin
-        amount %= coin
-    
-    return count
+def lemonadeChange(bills):
+    five = ten = 0  # counts of $5 and $10 bills
+
+    for bill in bills:
+        if bill == 5:
+            five += 1
+        elif bill == 10:
+            if five == 0:
+                return False
+            five -= 1
+            ten += 1
+        else:  # bill == 20
+            if ten > 0 and five > 0:
+                ten -= 1
+                five -= 1
+            elif five >= 3:
+                five -= 3
+            else:
+                return False
+    return True
+
 ```
 **LeetCode:** #860 Lemonade Change
 
