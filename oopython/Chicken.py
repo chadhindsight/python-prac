@@ -9,4 +9,3 @@ class Chicken:
         self.eggs += 1 
         Chicken.total_eggs += 1
         return self.eggs
-    # I want to die
