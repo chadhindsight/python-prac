@@ -76,7 +76,7 @@ def lemonadeChange(bills):
                 return False
             five -= 1
             ten += 1
-        else:  # bill == 20
+        else:  # when bill == 20
             if ten > 0 and five > 0:
                 ten -= 1
                 five -= 1
