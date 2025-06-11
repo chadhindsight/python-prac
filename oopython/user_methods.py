@@ -4,7 +4,7 @@ class User:
 		self.first = first
 		self.last = last
 		self.age = age
-#  me deh ya
+
 	def full_name(self):
 		return f"{self.first} {self.last}"
 
