@@ -32,7 +32,7 @@ sounds[1], sounds[3] = sounds[3], sounds[1]
 numbers = [34, 50, 78, 100, 60]
 
 doubleUp = [number * 2 for number in numbers]
-tripleUp = [number * 3 for number in numbers]
+quadUp = [number * 4 for number in numbers]
             
 answer1 = [val for val in numbers if val in [3, 78, 50, 6, 12, 22]] 
 
