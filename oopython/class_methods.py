@@ -27,8 +27,8 @@ class User:
 	def initials(self):
 		return f"{self.first[0]}.{self.last[0]}."
 
-	def likes(self, thing):
-		return f"{self.first} likes {thing}"
+	def likes(self, ting):
+		return f"{self.first} likes {ting}"
 
 	def is_senior(self):
 		return self.age >= 65
