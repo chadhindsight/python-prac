@@ -42,7 +42,7 @@ class User:
 # user1 = User("Joe", "Smith", 68)
 # user2 = User("Blanca", "Lopez", 41)
 # print(User.display_active_users())
-# user1 = User("Joe", "Smith", 68)
+# user1 = User("Joe", "Smith", 76)
 # user2 = User("Blanca", "Lopez", 41)
 # print(User.display_active_users())
 
