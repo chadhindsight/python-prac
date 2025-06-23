@@ -46,7 +46,7 @@ class User:
 # print(User.display_active_users())
 
 
-tom = User.from_string("Tom,Jones,89")
+tom = User.from_string("Tom,Jones,79")
 print(tom.first)
 print(tom.full_name())
 print(tom.birthday())
