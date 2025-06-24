@@ -1,10 +1,10 @@
 # A User class with instance attributes and instance methods
 class User:
 	active_users = 0
-
+	fav = "bunda"
 	@classmethod
 	def display_active_users(cls):
-		return f"There are currently {cls.active_users} active users"
+		return f"There are currently {cls.active_users} active users and I love {cls.fav}"
 
 	@classmethod
 	def from_string(cls, data_str):
@@ -50,15 +50,5 @@ tom = User.from_string("Tom,Jones,79")
 print(tom.first)
 print(tom.full_name())
 print(tom.birthday())
-
-
-
-
-
-
-
-
-
-
-
-
+# Calling a class method
+print(User.display_active_users())
