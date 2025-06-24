@@ -1,4 +1,4 @@
-# A User class with both instance attributes and instance methods
+# A User class with instance attributes and instance methods
 class User:
 	active_users = 0
 
