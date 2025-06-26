@@ -1,26 +1,32 @@
 class Card:
     def __init__(self, suit, value):
-       self.suit = suit
-       self.value = value 
+        self.suit = suit
+        self.value = value 
     
-    # a getter
     def __repr__(self):
-        return f"The card selected was the {self.value} of {self.suit})"
+        return f"The card selected was the {self.value} of {self.suit}"
 
 class Deck:
     def __init__(self):
         suits = ["Hearts", "Diamonds", "Clubs", "Spades"]
         values = ['A','2','3','4','5','6','7','8','9','10','J','Q','K']
-        self.cards = [Card(value, suit) for value in values for suit in suits]
-        print(self.cards)
+        self.cards = [Card(suit, value) for value in values for suit in suits] 
+    
+    def __repr__(self):
+        return f"Deck of {self.count()} cards"  
     
     def count(self):
-        return f"You have {len(self.cards)} cards in the deck"
-
-
-
-c1 = Card("A", "Spades")
-c1 = Card("5", "Hearts")
+        return len(self.cards)  
     
+    def _deal(self, num):
+        numOfCards = self.count()  
+        actual = min(numOfCards, num) 
+        if numOfCards == 0:
+            raise ValueError("All cards have been dealt")
+        cards = self.cards[-actual:] 
+        self.cards = self.cards[:-actual]
+        return cards 
+
 d = Deck()
+print(d._deal(3))
 print(d.count())
