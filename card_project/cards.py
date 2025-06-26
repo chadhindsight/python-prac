@@ -27,6 +27,11 @@ class Deck:
         self.cards = self.cards[:-actual]
         return cards 
 
+    def deal_card(self):
+        return self._deal(1)[0]
+     
+    # def deal_hand(self):
+
 d = Deck()
 print(d._deal(3))
 print(d.count())
