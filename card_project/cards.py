@@ -11,9 +11,8 @@ class Deck:
     def __init__(self):
         suits = ["Hearts", "Diamonds", "Clubs", "Spades"]
         values = ['A','2','3','4','5','6','7','8','9','10','J','Q','K']
-        self.cards = []
-
-        
+        self.cards = [Card(value, suit) for value in values for suit in suits]
+        print(self.cards)
     
     def count(self):
         return f"You have {len(self.cards)} cards in the deck"
@@ -23,3 +22,4 @@ class Deck:
 c1 = Card("A", "Spades")
 c1 = Card("5", "Hearts")
     
+Deck()
