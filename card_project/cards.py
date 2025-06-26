@@ -30,8 +30,16 @@ class Deck:
     def deal_card(self):
         return self._deal(1)[0]
      
-    # def deal_hand(self):
+    def deal_hand(self, hand_size):
+        return self._deal(hand_size)
+
+    def shuffle(self):
+        if self.count() < 52:
+            raise ValueError("Damn! only full decks can be shuffled")
+        
+        shuffle(self.cards)
+        return self
+        
+
 
 d = Deck()
-print(d._deal(3))
-print(d.count())
