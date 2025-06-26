@@ -5,7 +5,7 @@ class Card:
     
     # a getter
     def __repr__(self):
-        return f"The card selected was the age={self.value} of {self.suit})"
+        return f"The card selected was the {self.value} of {self.suit})"
 
 class Deck:
     def __init__(self):
@@ -22,4 +22,5 @@ class Deck:
 c1 = Card("A", "Spades")
 c1 = Card("5", "Hearts")
     
-Deck()
+d = Deck()
+print(d.count())
