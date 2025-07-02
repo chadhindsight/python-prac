@@ -6,7 +6,7 @@ class Card:
         self.value = value 
     
     def __repr__(self):
-        return f"The card that was selected was the {self.value} of {self.suit}"
+        return f"The card selected is the {self.value} of {self.suit}"
 
 class Deck:
     def __init__(self):
