@@ -1,7 +1,7 @@
 # A User class with instance attributes and instance methods
 class User:
 	active_users = 0
-	fav = "bunda"
+
 	@classmethod
 	def display_active_users(cls):
 		return f"There are currently {cls.active_users} active users and I love {cls.fav}"
