@@ -4,7 +4,7 @@ class User:
 
 	@classmethod
 	def display_active_users(cls):
-		return f"There are currently {cls.active_users} active users and I love {cls.fav}"
+		return f"There are currently {cls.active_users} active users"
 
 	@classmethod
 	def from_string(cls, data_str):
