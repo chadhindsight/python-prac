@@ -38,13 +38,6 @@ class User:
 		return f"Happy {self.age}th, {self.first}"
 
 
-# user1 = User("Joe", "Smith", 68)
-# user2 = User("Blanca", "Lopez", 41)
-# print(User.display_active_users())
-# user1 = User("Joe", "Smith", 76)
-# user2 = User("Blanca", "Lopez", 41)
-# print(User.display_active_users())
-
 
 tom = User.from_string("Tom,Jones,79")
 print(tom.first)
