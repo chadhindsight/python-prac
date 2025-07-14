@@ -13,8 +13,7 @@ class Animal:
 
 class Cat(Animal):
 	def __init__(self, name, breed, toy):
-		super().__init__(name, species="Cat") # Call init on parent class
-		self.breed = breed
+		super().__init__(name, species="Cat")
 		self.toy = toy
 
 	def play(self):
