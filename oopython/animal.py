@@ -15,7 +15,7 @@ class Cat(Animal):
 	def __init__(self, name, breed, toy):
 		super().__init__(name, species="Cat")
 		self.toy = toy
-
+		self.breed = breed
 	def play(self):
 		print(f"{self.name} plays with {self.toy}")
 
