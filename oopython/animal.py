@@ -17,7 +17,7 @@ class Cat(Animal):
 		self.toy = toy
 		self.breed = breed
 	def play(self):
-		print(f"{self.name} plays with {self.toy}")
+		print(f"{self.name} plays with {self.toy}!")
 
 
 
