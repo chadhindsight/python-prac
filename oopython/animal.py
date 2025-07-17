@@ -8,7 +8,7 @@ class Animal:
 		return f"{self.name} is a {self.species}"
 
 	def make_sound(self, sound):
-		print(f"this animal says {sound}")
+		print(f"This animal says {sound}")
 
 
 class Cat(Animal):
