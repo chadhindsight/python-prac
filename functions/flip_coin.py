@@ -2,9 +2,9 @@ from random import random
 
 def flip_coin():
     if random() > 0.5:
-        return "HEADS"
+        return "HEADS!"
     else:
-        return "TAILS"
+        return "TAILS!"
 
 # call the function
 print(flip_coin())    
