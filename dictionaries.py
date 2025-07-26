@@ -46,7 +46,7 @@ stock_list.pop('cake')
 list1 = ["CA", "NJ", "RI"]
 list2 = ["California", "New Jersey", "Rhode Island"]
 
-answer = {list1[i]: list2[i] for i in range(len(list2))}
+answer = {list1[i]: list2[i] for i in range(len(list1))}
 
 # NB: to iterate over keys and values together, use .items()
 
