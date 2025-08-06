@@ -25,7 +25,7 @@ blue = Cat("Blue","Scottish Fold", "String")
 blue.play()
 
 
-# OUR "MODEL" FOR AN ANIMAL AND A CAT subclass
+# OUR "MODEL" FOR AN ANIMAL AND a subclass called CAT 
 # Animal
 # 	species
 # 	name
