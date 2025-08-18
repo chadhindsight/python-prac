@@ -1,4 +1,4 @@
-# We can pass funcs as args to other funcs
+# We can pass functions as args to other functions
 
 def sum(n, func):
 	total = 0
