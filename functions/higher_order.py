@@ -12,6 +12,6 @@ def cube(x):
 	return x*x*x
 
 
-print(sum(3,cube))
+print(sum(4,cube))
 print(sum(3,square))
 
