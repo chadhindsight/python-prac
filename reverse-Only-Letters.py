@@ -2,19 +2,19 @@
 class Solution:
     def reverseOnlyLetters(self, s: str) -> str:
         str_list = list(s)
-        i = 0
-        j = len(str_list) - 1
+        left = 0
+        right = len(str_list) - 1
 
-        while i < j:
-            if str_list[i].isalpha() and str_list[j].isalpha():
-                str_list[i], str_list[j] = str_list[j], str_list[i]
-                i += 1
-                j -= 1
+        while left < right:
+            if str_list[left].isalpha() and str_list[right].isalpha():
+                str_list[left], str_list[right] = str_list[right], str_list[left]
+                left += 1
+                right -= 1
             
-            elif not str_list[i].isalpha():
-                i +=1
-            elif not str_list[j].isalpha():
-                j -= 1
+            elif not str_list[left].isalpha():
+                left +=1
+            elif not str_list[right].isalpha():
+                right -= 1
         
         return ''.join(str_list)
         
