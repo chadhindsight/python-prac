@@ -5,8 +5,8 @@ def sum(n, func):
 		total += func(num)
 	return total
 
-def square(y):
-	return y*y
+def square(a):
+	return a*a
 
 def cube(x):
 	return x*x*x
