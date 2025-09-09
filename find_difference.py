@@ -1,5 +1,5 @@
 class Solution:
-    def findTheDifference(self, s: str, t: str) -> str:
+    def findTheDifference(self, s: str, t: str) -> str
         val1 = {}
         val2 = {}
 
