@@ -9,6 +9,6 @@ class Solution:
         for word in t:
             val2[word] = val2.get(word, 0) + 1
         
-        for value in val2:
-            if val1.get(value, 0) != val2[value]:
-                return value
+        for val in val2:
+            if val1.get(val, 0) != val2[val]:
+                return val
