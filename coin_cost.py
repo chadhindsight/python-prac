@@ -1,7 +1,7 @@
 class Solution:
-    def minCostToMoveChips(position):
+    def minCostToMoveChips(pos):
         even = odd = 0
-        for num in position:
+        for num in pos:
             if num % 2 == 0:
                 even += 1
             else:
