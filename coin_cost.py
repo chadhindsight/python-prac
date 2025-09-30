@@ -1,5 +1,5 @@
 class Solution:
-    def minCostToMoveChips(position):
+    def minimumCostToMoveChips(position):
         even = odd = 0
         for num in position:
             if num % 2 == 0:
