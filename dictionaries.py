@@ -3,13 +3,7 @@ user_info = {
     "age": 7,
     "is_cute": True
 }
-deez = {
-    "name": 'Ruff',
-    "attack": 500,
-    "defence": 250,
-    "agility": 900,
-    "in_roster": True
-}
+
 # Accessing values
 artist = {
     "first": "Neil",
