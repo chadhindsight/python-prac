@@ -6,8 +6,8 @@ user_info = {
 
 # Accessing values
 artist = {
-    "first": "Neil",
-    "last": "Young",
+    "first": "Bad",
+    "last": "Bunny",
 }
 
 full_name = f"{artist['first']} {artist['last']}"
