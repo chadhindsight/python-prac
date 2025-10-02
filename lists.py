@@ -33,7 +33,7 @@ numbers = [34, 50, 78, 100, 60]
 
 doubleUp = [number * 2 for number in numbers]
 quadUp = [number * 4 for number in numbers]
-            
+print(doubleUp)            
 answer1 = [val for val in numbers if val in [3, 78, 50, 6, 12, 22]] 
 
 #the slice [::-1] is a quick way to reverse a string
