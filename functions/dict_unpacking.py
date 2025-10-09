@@ -12,7 +12,7 @@ def add_and_multiply_numbers(val1,val2,val3,**kwargs):
 
 data = dict(val1=1,val2=2,val3=3,d=55,name="Tony")
 
-add_and_multiply_numbers(**data) 
+print(add_and_multiply_numbers(**data))
 
 def calculate(**kwargs):
     operation_lookup = {
