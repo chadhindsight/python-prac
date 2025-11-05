@@ -10,7 +10,7 @@ artist = {
     "last": "Statlander",
 }
 
-full_name = f"{artist['first']} {artist['last']}"
+full_name = f"My fave wrestler is {artist['first']} {artist['last']}"
 print(full_name)
 
 # DON'T TOUCH PLEASE!
