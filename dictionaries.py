@@ -5,13 +5,13 @@ user_info = {
 }
 
 # Accessing values
-artist = {
+wrestler = {
     "first": "Kris",
     "last": "Statlander",
 }
 
-full_name = f"My fave wrestler is {artist['first']} {artist['last']}"
-print(full_name)
+my_fave = f"My fave wrestler is {wrestler['first']} {wrestler['last']}"
+print(my_fave)
 
 # DON'T TOUCH PLEASE!
 donations = dict(sam=25.0, lena=88.99, chuck=13.0, linus=99.5, stan=150.0, lisa=50.25, harrison=10.0)
