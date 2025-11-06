@@ -5,12 +5,12 @@ user_info = {
 }
 
 # Accessing values
-fave_wrestler = {
+favorite_wrestler = {
     "first": "Kris",
     "last": "Statlander",
 }
 
-my_fave = f"My fave wrestler is {fave_wrestler['first']} {fave_wrestler['last']}"
+my_fave = f"My fave wrestler is {favorite_wrestler['first']} {favorite_wrestler['last']}"
 print(my_fave)
 
 # DON'T TOUCH PLEASE!
