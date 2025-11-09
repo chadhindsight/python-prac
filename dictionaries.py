@@ -25,7 +25,7 @@ for val in donations.values():
 
 print(donations_total)    
 
-# Example of how to check if something is in a dictionary
+# Example of how to check for a specific value in a dictionary
 "name" in user_info.keys() 
 "Koya" in user_info.values()
 
