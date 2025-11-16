@@ -8,7 +8,7 @@ def be_polite(fn):
 
 @be_polite
 def greet():
-    print("My name is Colt.")
+    print("My name is Colt!")
 
 
 @be_polite
