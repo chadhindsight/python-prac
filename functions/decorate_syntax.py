@@ -1,4 +1,4 @@
-# NB: decorators are functions that wrap other functions.
+# NB: decorators are functions that wrap other functions
 def be_polite(fn):
     def wrapper():
         print("What a pleasure to meet you!")
