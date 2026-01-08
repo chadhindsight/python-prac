@@ -1,17 +1,17 @@
-# NB: decorators are functions that wrap other functions.
-def be_polite(fn):
+# NB: decorators are functions that wrap other functions
+def be_nice(fn):
     def wrapper():
         print("What a pleasure to meet you!")
         fn()
         print("Have a great day!")
     return wrapper
 
-@be_polite
+@be_nice
 def greet():
     print("My name is Colt")
 
 
-@be_polite
+@be_nice
 def rage():
 	print("I HATE YOU!")
 
