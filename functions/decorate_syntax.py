@@ -1,7 +1,7 @@
 # NB: decorators are functions that wrap other functions
 def be_polite(fn):
     def wrapper():
-        print("What a pleasure to meet you!")
+        print("What a pleasure to meet you")
         fn()
         print("Have a great day!")
     return wrapper
