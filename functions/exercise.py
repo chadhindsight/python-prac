@@ -1,3 +1,15 @@
+'''
+@show_args
+def do_nothing(*args, **kwargs):
+    pass
+
+do_nothing(1, 2, 3,a="hi",b="bye")
+
+# Should print (on two lines):
+# Here are the args: (1, 2, 3)
+# Here are the kwargs: {"a": "hi", "b": "bye"}
+'''
+
 from functools import wraps
 
 
