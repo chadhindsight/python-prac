@@ -6,8 +6,8 @@ user_info = {
 
 # Accessing values
 favorite_wrestler = {
-    "first": "Kris",
-    "last": "Statlander",
+    "first": "Io",
+    "last": "Sky",
 }
 
 my_fave = f"My fave wrestler is {favorite_wrestler['first']} {favorite_wrestler['last']}"
