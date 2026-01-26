@@ -6,3 +6,4 @@ def double_return(fn):
         val = fn(*args, **kwargs)
         return [val, val]
     return wrapper
+# KYS
