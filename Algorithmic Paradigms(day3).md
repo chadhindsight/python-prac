@@ -36,26 +36,28 @@ def merge(left, right):
 ### Quick Sort
 **Time:** O(n log n) average, **Space:** O(log n)
 ```python
-def quick_sort(arr, low=0, high=None):
-    if high is None:
-        high = len(arr) - 1
+def quick_sort(arr, left=0, right=None):
+    if right is None:
+        right = len(arr) - 1
     
-    if low < high:
-        pivot = partition(arr, low, high)
-        quick_sort(arr, low, pivot - 1)
-        quick_sort(arr, pivot + 1, high)
+    if left < right:
+        pivot_index = partition(arr, left, right)
+        quick_sort(arr, left, pivot_index - 1)
+        quick_sort(arr, pivot_index + 1, right)
+    
+    return arr
 
-def partition(arr, low, high):
-    pivot = arr[high]
-    i = low - 1
+def partition(arr, start, end):
+    pivot = arr[start]
+    swap_idx = start
     
-    for j in range(low, high):
-        if arr[j] <= pivot:
-            i += 1
-            arr[i], arr[j] = arr[j], arr[i]
+    for i in range(start + 1, end + 1):
+        if pivot > arr[i]:
+            swap_idx += 1
+            arr[swap_idx], arr[i] = arr[i], arr[swap_idx]
     
-    arr[i + 1], arr[high] = arr[high], arr[i + 1]
-    return i + 1
+    arr[start], arr[swap_idx] = arr[swap_idx], arr[start]
+    return swap_idx
 ```
 **LeetCode:** #215 Kth Largest Element
 
