@@ -50,7 +50,7 @@ def quick_sort(arr, left=0, right=None):
 def partition(arr, start, end):
     pivot = arr[start]
     swap_idx = start
-    
+    # range() is exclusive of the end value so we need +1 to include the end value
     for i in range(start + 1, end + 1):
         if pivot > arr[i]:
             swap_idx += 1
