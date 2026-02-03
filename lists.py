@@ -12,7 +12,7 @@ instructors = []
 # Add the following strings to the instructors list 
     # "Colt"
     # "Blue"
-    # "Lisa"
+    # "Stevie"
 instructors.extend(["Colt", "Blue", "Lisa"])
 instructors.append("Jessica") 
 
