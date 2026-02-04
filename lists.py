@@ -20,7 +20,7 @@ instructors.pop()
 # Remove the first value from the list
 instructors.pop(0)
  
-# Add the string "Done" to the beginning of the list
+# Insert the string "Done" to the beginning of the list
 instructors.insert(0, 'Done')
 
 # Example of swapping values 
