@@ -9,10 +9,8 @@ for sound in sounds:
 # Create a list called instructors
 instructors = []
  
-# Add the following strings to the instructors list 
-    # "Colt"
-    # "Blue"
-    # "Stevie"
+# Add new entries to the instructors list 
+   
 instructors.extend(["Colt", "Blue", "Lisa"])
 instructors.append("Jessica") 
 
