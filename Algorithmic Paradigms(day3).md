@@ -59,7 +59,7 @@ def partition(arr, start, end):
     arr[start], arr[swap_idx] = arr[swap_idx], arr[start]
     return swap_idx
 ```
-**LeetCode:** #215 Kth Largest Element
+**LeetCode:** #912 Sort an Array
 
 ## 2. Greedy
 **What it is:** Pick what looks best right now.
