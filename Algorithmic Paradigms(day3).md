@@ -31,7 +31,6 @@ def merge(left, right):
     result.extend(right[j:])
     return result
 ```
-**LeetCode:** #148 Sort List
 
 ### Quick Sort
 **Time:** O(n log n) average, **Space:** O(log n)
@@ -142,7 +141,7 @@ def longest_unique_substring(s):
     
     return max_len
 ```
-**LeetCode:** #3 Longest Substring Without Repeating Characters
+
 
 ## 4. Two Pointers
 **What it is:** Use two pointers moving through data.
