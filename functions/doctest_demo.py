@@ -8,7 +8,7 @@ def add(a, b):
 	return a + b
 
 def double(values):
-	""" double the values in a list
+	""" double the values in the list
 
 	>>> double([1,2,3,4])
 	[2, 4, 6, 8]
