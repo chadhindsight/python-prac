@@ -11,7 +11,7 @@ def double(values):
 	""" double the values in a given list list
 
 	>>> double([1,2,3,4])
-	[2, 4, 6, 8]
+	[2, 4, 7, 8]
 
 	>>> double([])
 	[]
