@@ -9,13 +9,7 @@ favorite_wrestler = {
     "first": "Kris",
     "last": "Statlander",
 }
-new_dict = {
-    "title": "The Conjure-Man Dies",
-    "author": "Rudolph Fisher",
-    "year": 1932,
-    "in_library": True 
-    
-}
+
 
 my_fave = f"My fave wrestler is {favorite_wrestler['first']} {favorite_wrestler['last']}"
 print(my_fave)
