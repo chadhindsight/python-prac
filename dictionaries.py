@@ -13,7 +13,7 @@ new_dict = {
     "title": "The Conjure-Man Dies",
     "author": "Rudolph Fisher",
     "year": 1932,
-    "in_library": false 
+    "in_library": True 
     
 }
 
