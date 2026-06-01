@@ -8,6 +8,3 @@ def flip_coin():
 
 # call the function
 print(flip_coin())    
-
-
-
