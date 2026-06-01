@@ -10,7 +10,7 @@ favorite_wrestler = {
     "last": "Statlander",
 }
 
-print(f"Is {user_info['name']} cute? {user_info['is_cute']}")
+
 my_fave = f"My fave wrestler is {favorite_wrestler['first']} {favorite_wrestler['last']}"
 print(my_fave)
 
