@@ -11,5 +11,3 @@ print(flip_coin())
 
 
 
-def name_func():
-    print("This is an example of how to write a python function")
