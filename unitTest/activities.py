@@ -19,6 +19,8 @@ def nap(num_hours):
 def is_funny(person):
     if person is 'tim':
         return False
+    elif person is 'koya':
+        return "Koya is by far the funniest!"
     return True
 
 
