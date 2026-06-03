@@ -11,7 +11,7 @@ class ActivityTests(unittest.TestCase):
         )
 
     def test_eat_unhealthy(self):
-        """eat should indicate you've given up for eating unhealthy"""
+        """eat indicates you've given up for eating unhealthy"""
         self.assertEqual(
             eat("pizza", is_healthy=False),
             "I'm eating pizza, because YOLO!"
