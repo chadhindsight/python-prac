@@ -38,7 +38,7 @@ class ActivityTests(unittest.TestCase):
     def test_is_funny_tim(self):
         self.assertEqual(is_funny("tim"), False)
         # self.assertFalse(is_funny("tim"), "tim should not be funny")
-        self.assertEqual(is_funny("koya"), 'Koya is by far the funniest!' )
+        self.assertEqual(is_funny("koya"), 'Koya is by far the funniest!')
 
     def test_is_funny_anyone_else(self):
         """anyone else but tim should be funny"""
