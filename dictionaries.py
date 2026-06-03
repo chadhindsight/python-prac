@@ -11,7 +11,7 @@ best_wrestler = {
 }
 
 
-my_fave = f"My fave wrestler is {best_wrestler['first']} {best_wrestler['last']}"
+my_fave = f"THe best wrestler is {best_wrestler['first']} {best_wrestler['last']}"
 print(my_fave)
 
 # DON'T TOUCH PLEASE!
@@ -26,9 +26,9 @@ for val in donations.values():
 
 print(donations_total)    
 
-# Example of how to check for a specific value in a dictionary
-"name" in user_info.keys() 
-"Koya" in user_info.values()
+# Example of how to check for a specific key or value in a dictionary
+"age" in user_info.keys() 
+8 in user_info.values()
 
 # Dictionary methods
 inventory = {'croissant': 19, 'bagel': 4, 'muffin': 8, 'cake': 1} #DON'T CHANGE THIS LINE!
