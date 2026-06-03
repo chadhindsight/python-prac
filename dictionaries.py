@@ -11,7 +11,7 @@ best_wrestler = {
 }
 
 
-my_fave = f"THe best wrestler is {best_wrestler['first']} {best_wrestler['last']}"
+my_fave = f"The best wrestler is {best_wrestler['first']} {best_wrestler['last']}"
 print(my_fave)
 
 # DON'T TOUCH PLEASE!
