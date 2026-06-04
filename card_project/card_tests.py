@@ -2,7 +2,7 @@ import unittest
 from cards import Card, Deck 
 
 class CardTests(unittest.TestCase):
-    def set_up(self):
+    def setUp(self):
         self.card = Card("Hearts", "A")
     
     def test_init(self):
@@ -12,6 +12,9 @@ class CardTests(unittest.TestCase):
     
     def test_repr(self):
         """repr should return a string in the form of Value of Suit"""
-        self.assertEqual( repr(self.card), "The card selected is the A of Hearts"
+        self.assertEqual(repr(self.card), "The card selected is the A of Hearts")
                          
-)
+
+
+if __name__ == "__main__":
+    unittest.main()
