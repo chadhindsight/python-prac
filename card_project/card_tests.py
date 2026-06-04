@@ -6,10 +6,12 @@ class CardTests(unittest.TestCase):
         self.card = Card("Hearts", "A")
     
     def test_init(self):
-        """cards should have asuit and a value"""
+        """cards should have a suit and a value"""
         self.assertEqual(self.card.suit, "Hearts")
         self.assertEqual(self.card.value, "A")
     
     def test_repr(self):
-        self.assertEqual( repr(self.card),"The card selected is the A of Hearts"
+        """repr should return a string in the form of Value of Suit"""
+        self.assertEqual( repr(self.card), "The card selected is the A of Hearts"
+                         
 )
