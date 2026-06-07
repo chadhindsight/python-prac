@@ -11,7 +11,7 @@ class CardTests(unittest.TestCase):
         self.assertEqual(self.card.value, "A")
     
     def test_repr(self):
-        """repr should return a string in the form of Value of Suit"""
+        """repr should return a string in the form of 'Value of Suit' """
         self.assertEqual(repr(self.card), "The card selected is the A of Hearts")
                          
 
