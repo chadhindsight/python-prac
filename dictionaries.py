@@ -1,6 +1,6 @@
 user_info = {
     "name": 'Koya',
-    "age": 8,
+    "age": 9,
     "is_cute": True
 }
 
