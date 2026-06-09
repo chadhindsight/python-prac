@@ -34,6 +34,12 @@ class DeckTests(unittest.TestCase):
         self.assertEqual(self.deck.cards.count(), 52)
         self.deck.cards.pop()
         self.assertEqual(self.deck.cards.count(), 51)
+    
+    def test_deal_sufficient_cards(self):
+        """_deal should deal the number of cards specified"""
+        cards = self.deck._deal(10)
+        self.assertEqual(len(cards), 10)
+        self.assertEqual(self.deck.count(), 42)
 
 if __name__ == "__main__":
     unittest.main()
