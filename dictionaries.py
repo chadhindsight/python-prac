@@ -10,7 +10,6 @@ best_wrestler = {
     "last": "Statlander",
 }
 
-best_wrestler["first"] = "Juice"
 my_fave = f"The best wrestler is {best_wrestler['first']} {best_wrestler['last']}"
 print(my_fave)
 
