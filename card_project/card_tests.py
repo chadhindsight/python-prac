@@ -11,10 +11,13 @@ class CardTests(unittest.TestCase):
         self.assertEqual(self.card.value, "A")
     
     def test_repr(self):
-        """repr should return a string in the form of 'Value of Suit' """
+        """repr should return a string in the form of 'The card selected is the ___ of ___' """
         self.assertEqual(repr(self.card), "The card selected is the A of Hearts")
                          
-
+class DeckTests(unittest.TestCase):
+    def setUp(self):
+        self.deck = Deck()
+    
 
 if __name__ == "__main__":
     unittest.main()
