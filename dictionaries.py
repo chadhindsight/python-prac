@@ -35,7 +35,7 @@ inventory = {'croissant': 19, 'bagel': 4, 'muffin': 8, 'cake': 1} #DON'T CHANGE 
 # Make a copy of inventory and save it to a variable called stock_list USE A DICTIONARY METHOD
 stock_list = inventory.copy()
 
-# add the value 18 to stock_list under a new key called "cookie"
+# add the value 6 to stock_list under a new key called "cookie"
 stock_list['cookie'] = 6
 
 
