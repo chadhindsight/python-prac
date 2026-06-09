@@ -16,8 +16,14 @@ class CardTests(unittest.TestCase):
                          
 class DeckTests(unittest.TestCase):
     def setUp(self):
-        self.deck = []
+        self.deck = Deck()
     
+    def test_init(self):
+        """ deck should have a card attribute, which is a list of 52 cards"""
+        # Checks if self.deck.cards is a list or not
+        self.assertTrue(isinstance(self.deck.cards, list))
+        # Checks if the length of self.deck.cards is 52
+        self.assertEqual(len(self.deck.cards), 52)
 
 if __name__ == "__main__":
     unittest.main()
