@@ -24,6 +24,16 @@ class DeckTests(unittest.TestCase):
         self.assertTrue(isinstance(self.deck.cards, list))
         # Checks if the length of self.deck.cards is 52
         self.assertEqual(len(self.deck.cards), 52)
+    
+    def test_repr(self):
+        """ repr should return a string in the form of 'Deck of __ cards' """
+        self.assertEqual(self.deck, "Deck of 52 cards")
+    
+    def test_count(self):
+        """The count method should return the number of cards"""
+        self.assertEqual(self.deck.cards.count(), 52)
+        self.deck.cards.pop()
+        self.assertEqual(self.deck.cards.count(), 51)
 
 if __name__ == "__main__":
     unittest.main()
