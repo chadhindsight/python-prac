@@ -16,7 +16,7 @@ class CardTests(unittest.TestCase):
                          
 class DeckTests(unittest.TestCase):
     def setUp(self):
-        self.deck = Deck()
+        self.deck = []
     
 
 if __name__ == "__main__":
