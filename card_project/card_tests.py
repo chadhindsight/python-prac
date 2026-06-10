@@ -43,7 +43,7 @@ class DeckTests(unittest.TestCase):
     
     def test_deal_insufficient_cards(self):
         """ deal should not deal cards if there is a deficit"""
-        cards = self.deck._deal(80)
+        cards = self.deck._deal(100)
         self.assertEqual(len(cards), 52)
         self.assertEqual(self.deck.count(), 0)
 
