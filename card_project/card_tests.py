@@ -46,6 +46,12 @@ class DeckTests(unittest.TestCase):
         cards = self.deck._deal(100)
         self.assertEqual(len(cards), 52)
         self.assertEqual(self.deck.count(), 0)
+    
+    def test_deal_no_cards(self):
+        """deal should throw a ValueError if the deck is empty"""
+        self.deck._deal(self.count())
+        with self.assertRaises(ValueError):
+            self.deck(1)
 
 if __name__ == "__main__":
     unittest.main()
