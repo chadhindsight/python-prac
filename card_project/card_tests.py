@@ -52,6 +52,13 @@ class DeckTests(unittest.TestCase):
         self.deck._deal(self.count())
         with self.assertRaises(ValueError):
             self.deck(1)
+    
+    def test_deal_card(self):
+        """ deal_card should deal a single card from deck"""
+        card = self.deck.cards[-1]
+        dealt_card = self.deck.deal_card()
+        self.assertEqual(card, dealt_card)
+        self.assertEqual(self.deck.count(), 51)
 
 if __name__ == "__main__":
     unittest.main()
