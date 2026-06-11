@@ -59,6 +59,12 @@ class DeckTests(unittest.TestCase):
         dealt_card = self.deck.deal_card()
         self.assertEqual(card, dealt_card)
         self.assertEqual(self.deck.count(), 51)
+    
+    def test_deal_hand(self):
+        """deal_hand should deal the number of cards passed"""
+        cards = self.deck.deal_hand(20)
+        self.assertEqual(len(cards), 20)
+        self.assertEqual(self.deck.count(), 32) 
 
 if __name__ == "__main__":
     unittest.main()
