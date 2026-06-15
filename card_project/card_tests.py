@@ -69,6 +69,7 @@ class DeckTests(unittest.TestCase):
     def test_shuffle_full_deck(self):
         """shuffle method shoud shuffle the deck is the deck of cards is full"""
         cards = self.deck.cards[:]
+        self.deck.shuffle()
         self.assertNotEqual(cards, self.deck.cards)
         self.assertEqual(self.deck.count(), 52)
     
