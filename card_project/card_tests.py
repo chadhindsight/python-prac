@@ -73,6 +73,11 @@ class DeckTests(unittest.TestCase):
         self.assertNotEqual(cards, self.deck.cards)
         self.assertEqual(self.deck.count(), 52)
     
+    def test_shuffle_not_full_deck(self):
+        """shuffle should throw a ValueError of the deck not being full"""
+        self.deck._deal(1)
+        with self.assertRaises(ValueError):
+            self.deck.shuffle()
 
 
 if __name__ == "__main__":
