@@ -65,6 +65,13 @@ class DeckTests(unittest.TestCase):
         cards = self.deck.deal_hand(20)
         self.assertEqual(len(cards), 20)
         self.assertEqual(self.deck.count(), 32) 
+    
+    def test_shuffle_full_deck(self):
+        cards = self.deck.cards[:]
+        self.assertNotEqual(cards, self.deck.cards)
+        self.assertEqual(self.deck.count(), 52)
+    
+    
 
 if __name__ == "__main__":
     unittest.main()
