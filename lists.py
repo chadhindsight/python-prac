@@ -11,7 +11,7 @@ instructors = []
  
 # Add new entries to the instructors list 
    
-instructors.extend(["Colt", "Blue", "Lisa"])
+instructors.extend(["Colt", "Blue", "Lisa", "Andy"])
 instructors.append("Jessica") 
 
 # Remove the last value from a list
