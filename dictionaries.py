@@ -10,8 +10,8 @@ best_wrestler = {
     "last": "Statlander",
 }
 
-my_fave = f"The very best wrestler is {best_wrestler['first']} {best_wrestler['last']}"
-print(my_fave)
+the_best = f"The very best wrestler is {best_wrestler['first']} {best_wrestler['last']}"
+print(the_best)
 
 # DON'T TOUCH PLEASE!
 donations = dict(tam=25.0, lena=88.99, chuck=13.0, linus=99.5, stan=150.0, lucy=50.25, harrison=10.0)
