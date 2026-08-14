@@ -8,6 +8,7 @@ user_info = {
 fave_wrestler = {
     "first": "Kris",
     "last": "Statlander",
+    "age": 31
 }
 
 the_best = f"The very best wrestler is {fave_wrestler['first']} {fave_wrestler['last']}"
