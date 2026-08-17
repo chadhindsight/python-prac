@@ -13,6 +13,7 @@ fave_wrestler = {
 
 the_best = f"The very best wrestler is {fave_wrestler['first']} {fave_wrestler['last']}"
 print(the_best)
+print(user_info['name'])
 
 # DON'T TOUCH PLEASE!
 donations = dict(tam=25.0, lena=88.99, chuck=13.0, linus=99.5, stan=150.0, lucy=50.25, harrison=10.0)
