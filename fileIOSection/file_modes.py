@@ -15,6 +15,6 @@ with open("haiku.txt", "r+") as file:
 	file.seek(10)
 	file.write(":(")
 
-# r+ will not create a file if it doesn't exist
+# r+ will not create a file if it doesn't already exist
 with open("hello.txt", "a") as file:
 	file.write("HELLO!!!")
