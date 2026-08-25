@@ -17,4 +17,4 @@ with open("cats.csv", "w") as file:
 		"Age": 10
 	})
 
-# NB: .writer is used to write rows of data as lists, while .dictwriter is designed to write rows as dictionaries.
+# NB: .writer is used to write rows of data as lists, while .dictWriter is designed to write rows as dictionaries.
