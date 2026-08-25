@@ -1,7 +1,7 @@
 from csv import reader 
 from csv import DictReader
 
-# Importing and reading data with the reader module
+# Example of importing and reading data with the reader module 
 with open("fighters.csv") as file:
     csv_reader = reader(file)
     # NB: data is cast into a list because the csv.reader() function returns an iterable, 
