@@ -10,7 +10,7 @@ with open("fighters.csv") as file:
     data = list(csv_reader)
     print(data)
 
-# Reading/Parsing CSV Using a DictReader. 
+# Reading/Parsing CSV Using a DictReader 
 with open("fighters.csv") as file:
     csv_reader = DictReader(file)
     for row in csv_reader:
