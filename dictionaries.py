@@ -6,8 +6,8 @@ user_info = {
 
 # Accessing values
 best_wrestler = {
-    "first": "Priscilla",
-    "last": "Miranda",
+    "first": "Kris",
+    "last": "statlander",
     "age": 25
 }
 
