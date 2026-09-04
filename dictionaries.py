@@ -16,7 +16,7 @@ print(the_best)
 print(user_info['name'])
 
 # DON'T TOUCH PLEASE!
-donations = dict(tam=25.5, lena=88.99, chuck=13.0, linus=99.5, steve=150.0, lucy=50.25, harrison=10.0)
+donations = dict(tam=25.5, lena=89.99, chuck=13.0, linus=99.5, steve=150.0, lucy=50.25, harrison=10.0)
 
 
 # Use a loop to add together all the donations from above and store the resulting number in the variable called donations_total
