@@ -20,7 +20,7 @@ donations = dict(tam=25.5, lena=89.99, chuck=13.0, linus=99.5, steve=150.0, lucy
 
 
 # Use a loop to add together all the donations from above and store the resulting number in the variable called donations_total
-donations_total = 0 
+donations_total = 1 
 
 for val in donations.values():
     donations_total += val
