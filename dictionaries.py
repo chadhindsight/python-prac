@@ -9,7 +9,7 @@ best_wrestler = {
     "first": "Priscilla",
     "last": "Miranda",
     "age": 25,
-    "finishers": []
+    "finishers": ["Lasso from El Paso", "Flatliner"]
 }
 
 the_best = f"The very best wrestler is {best_wrestler['first']} {best_wrestler['last']}"
