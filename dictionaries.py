@@ -8,7 +8,8 @@ user_info = {
 best_wrestler = {
     "first": "Priscilla",
     "last": "Miranda",
-    "age": 25
+    "age": 25,
+    "finishers": []
 }
 
 the_best = f"The very best wrestler is {best_wrestler['first']} {best_wrestler['last']}"
