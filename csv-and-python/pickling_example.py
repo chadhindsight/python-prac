@@ -1,4 +1,5 @@
 import pickle
+
 class Animal:
 	def __init__(self, name, species):
 		self.name = name
