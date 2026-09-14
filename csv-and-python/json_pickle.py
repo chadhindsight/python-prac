@@ -16,3 +16,4 @@ with open("cat.json", "w") as file:
 # with open("cat.json", "r") as file:
 # 	contents = file.read()
 # 	unfrozen = jsonpickle.decode(contents)
+# 	print(unfrozen)
