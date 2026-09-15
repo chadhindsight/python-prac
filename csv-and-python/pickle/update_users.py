@@ -5,6 +5,7 @@ def update_users(old_first, old_last, new_first, new_last):
     with open("users.csv") as csvfile:
         csv_reader = csv.reader(csvfile)
         rows = list(csv_reader)
+    # var used to keep track of how many values were updated
     count = 0
     
     with open("users.csv", "w") as csvfile:
