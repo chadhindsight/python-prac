@@ -17,4 +17,4 @@ def update_users(old_first, old_last, new_first, new_last):
                 count += 1
             else:
                 csv_writer.writerow(row)
-    return f"Users updated: {count}."
+    return f"Users updated: {count}!"
