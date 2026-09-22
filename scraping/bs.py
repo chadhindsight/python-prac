@@ -2,4 +2,4 @@
 from bs import BeautifulSoup
 
 soup = BeautifulSoup(html, "html.parser")
-print(soup.body.div)
+# print(soup.body.div)
