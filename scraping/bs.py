@@ -25,3 +25,5 @@ html = """
 soup = BeautifulSoup(html, "html.parser")
 d = soup.select("[data-example]")
 print(d)
+
+# Navigating with beautiful soup
