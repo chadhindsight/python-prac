@@ -23,7 +23,6 @@ html = """
 """
 
 soup = BeautifulSoup(html, "html.parser")
-d = soup.select("[data-example]")
-print(d)
 
-# Navigating with beautiful soup
+# Navigating with beautiful soup(with tags and via searching methods) 
+data = soup.find(class_="super-special").parent.parent
