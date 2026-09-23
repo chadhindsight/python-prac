@@ -1,4 +1,5 @@
 from bs4 import BeautifulSoup
+
 html = """
 <!DOCTYPE html>
 <html lang="en">
