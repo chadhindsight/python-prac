@@ -24,5 +24,5 @@ html = """
 
 soup = BeautifulSoup(html, "html.parser")
 
-# Navigating with beautiful soup(with tags and via searching methods) 
+# Navigating with beautiful soup(with tags and also via searching methods) 
 data = soup.find(class_="super-special").parent.parent
