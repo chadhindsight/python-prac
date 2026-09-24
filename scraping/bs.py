@@ -25,4 +25,7 @@ html = """
 soup = BeautifulSoup(html, "html.parser")
 
 # Navigating with beautiful soup(with tags and also via searching methods) 
-data = soup.find(class_="super-special").parent.parent
+# data = soup.find(class_="super-special").parent.parent
+
+data = soup.find(id="first").find_next_sibling()
+data = soup.select("[data-example]") [1].find_previous_sibling()
