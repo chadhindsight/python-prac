@@ -28,4 +28,4 @@ soup = BeautifulSoup(html, "html.parser")
 # data = soup.find(class_="super-special").parent.parent
 
 data = soup.find(id="first").find_next_sibling()
-data = soup.select("[data-example]") [1].find_previous_sibling()
+data = soup.select("[data-example]") [1].find_previous_sibling(class_="special")
