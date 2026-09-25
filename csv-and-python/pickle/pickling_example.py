@@ -28,7 +28,7 @@ blue = Cat("Blue", "Scottish Fold", "String")
 with open("pets.pickle", "wb") as file:
 	pickle.dump(blue, file)
 
-# To unpickle something:
+# Example of how to unpickle something:
 # with open("pets.pickle", "rb") as file:
 # 	zombie_blue = pickle.load(file)
 # 	print(zombie_blue)
