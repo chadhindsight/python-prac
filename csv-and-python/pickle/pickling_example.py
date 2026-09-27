@@ -24,7 +24,7 @@ class Cat(Animal):
 
 blue = Cat("Blue", "Scottish Fold", "String")
 
-# To pickle an object:
+# To pickle an object do the following:
 with open("pets.pickle", "wb") as file:
 	pickle.dump(blue, file)
 
