@@ -5,6 +5,6 @@ response = requests.get("https://quotes.toscrape.com/")
 
 soup = BeautifulSoup(response.content, "html.parser")
 
-# NB: response.text gives HTML as a string (str) and .content gives HTML as raw bytes (bytes). Use this most of the time with BeautifulSoup.
 
 print(soup.find_all(class_="zyte"))
+# NB: response.text gives HTML as a string (str) and .content gives HTML as raw bytes (bytes). Use this most of the time with BeautifulSoup.
