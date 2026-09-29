@@ -18,4 +18,4 @@ for quote in quotes:
         "bio_link":  quote.find("a") ["href"]
     })
 
-print(all_quotes[2])
+print(all_quotes[0])
