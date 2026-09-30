@@ -19,6 +19,8 @@ while url:
             "bio_link":  quote.find("a") ["href"]
         })
     next_btn = soup.find(class_="next")
+    url = next_btn.find("a")["href"] if next_btn else None
     # standard protocol to do some rough rate limiting
     sleep(2)
+
 print(all_quotes[0])
