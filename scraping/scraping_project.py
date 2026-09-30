@@ -3,7 +3,7 @@ import requests
 
 # List that will store all quotes received 
 all_quotes = []
-
+base_url = "https://quotes.toscrape.com/"
 response = requests.get("https://quotes.toscrape.com/")
 soup = BeautifulSoup(response.text, "html.parser")
 
