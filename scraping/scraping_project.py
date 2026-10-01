@@ -23,4 +23,3 @@ while url:
     # standard protocol to do some rough rate limiting
     # sleep(2)
 
-print(all_quotes[0])
