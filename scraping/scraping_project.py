@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 from random import choice
+
 # List that will store all quotes received 
 all_quotes = []
 base_url = "https://quotes.toscrape.com/"
@@ -20,6 +21,7 @@ while url:
         })
     next_btn = soup.find(class_="next")
     url = next_btn.find("a")["href"] if next_btn else None
+    
     # standard protocol to do some rough rate limiting
     # sleep(2)
 
