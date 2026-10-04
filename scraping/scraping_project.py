@@ -23,5 +23,6 @@ while url:
     url = next_btn.find("a")["href"] if next_btn else None
     
     # standard protocol to do some rough rate limiting
-    # sleep(2)
+    sleep(2)
+    print(all_quotes)
 
