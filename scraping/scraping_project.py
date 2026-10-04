@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 from random import choice
 from time import sleep
+
 # List that will store all quotes received 
 all_quotes = []
 base_url = "https://quotes.toscrape.com/"
@@ -23,6 +24,13 @@ while url:
     url = next_btn.find("a")["href"] if next_btn else None
     
     # standard protocol to do some rough rate limiting
-    sleep(2)
-    print(all_quotes)
+    # sleep(2)
 
+quote = choice(all_quotes)
+remaining_guesses = 4
+print("Check out this quote: ")
+print(quote["text"])
+guess = ""
+
+while guess.lower() != quote["author"].lower():
+    guess = input(f"Who said this quote? Guesses remaining: {remaining_guesses}")
