@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 from random import choice
-
+from time import sleep
 # List that will store all quotes received 
 all_quotes = []
 base_url = "https://quotes.toscrape.com/"
