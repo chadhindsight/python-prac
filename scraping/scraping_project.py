@@ -53,3 +53,5 @@ while guess.lower() != quote["author"].lower() and remaining_guesses > 0:
         print(f"Here's a hint: The author's last name starts with {last_initial}")
     else:
         print(f"Sorry, game over! The answer was {quote['author']}")
+
+again = print("Would you like to play again? (y/n) ?")
