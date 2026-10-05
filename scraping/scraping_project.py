@@ -48,5 +48,7 @@ while guess.lower() != quote["author"].lower() and remaining_guesses > 0:
     elif remaining_guesses == 1:
         last_initial = quote['author'].split(" ")[1][0]
         print(f"Here's a hint: The author's last name starts with {last_initial}")
+    else:
+        print(f"Sorry, game over! The answer was {quote["author"]}")
 
 print("After while loop")
