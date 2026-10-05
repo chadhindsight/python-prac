@@ -42,8 +42,8 @@ stock_list = inventory.copy()
 stock_list['cookie'] = 5
 
 
-# remove 'cake' from stock_list (USE A DICTIONARY METHOD)
-stock_list.pop('cake')
+# remove 'muffin' from stock_list (USE A DICTIONARY METHOD)
+stock_list.pop('muffin')
 
 # Dictionary comprehension {__:__ for __ in __}
 # Dictionary comprehension iterates through keys by default
