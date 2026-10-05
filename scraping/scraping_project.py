@@ -36,5 +36,10 @@ guess = ""
 while guess.lower() != quote["author"].lower() and remaining_guesses > 0:
     guess = input(f"Who said this quote? Guesses remaining: {remaining_guesses}")
     remaining_guesses -= 1
-    if 
+    
+    if remaining_guesses == 3:
+      res = requests.get(f"{base_url}{quote['bio_link']}")
+      soup = BeautifulSoup(res.text, "html.parser")
+      birth_date = soup.find(class_="author-born-date").get_text()
+
 print("After while loop")
