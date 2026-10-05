@@ -41,5 +41,12 @@ while guess.lower() != quote["author"].lower() and remaining_guesses > 0:
       res = requests.get(f"{base_url}{quote['bio_link']}")
       soup = BeautifulSoup(res.text, "html.parser")
       birth_date = soup.find(class_="author-born-date").get_text()
+      birth_place = soup.find(class_="author-born-location").get_text()
+      print(f"Here's a hint: The author was born on {birth_date} {birth_place}")
+    elif remaining_guesses == 2:
+        print(f"Here's a hint: The author's first name starts with {quote['author'][0]}")
+    elif remaining_guesses == 1:
+        last_initial = quote['author'].split(" ")[1][0]
+        print(f"Here's a hint: The author's last name starts with {last_initial}")
 
 print("After while loop")
