@@ -63,4 +63,3 @@ answer = {char:0 for char in 'aeiouAEIOU'}
 
 # Create a dictionary that maps ASCII keys to their corresponding letters.  Use a dictionary comprehension and chr()
 answer_ASCII =  {i: chr(i) for i in range(65,91)}
-print("Answer", answer)
