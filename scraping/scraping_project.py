@@ -30,7 +30,11 @@ quote = choice(all_quotes)
 remaining_guesses = 4
 print("Check out this quote: ")
 print(quote["text"])
+print(quote["author"])
 guess = ""
 
-while guess.lower() != quote["author"].lower():
+while guess.lower() != quote["author"].lower() and remaining_guesses > 0:
     guess = input(f"Who said this quote? Guesses remaining: {remaining_guesses}")
+    remaining_guesses -= 1
+    if 
+print("After while loop")
