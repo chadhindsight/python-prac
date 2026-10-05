@@ -17,7 +17,7 @@ while url:
     for quote in quotes:
         all_quotes.append({
             "text": quote.find(class_="text").text,
-            "author": quote.find(class_="author").text,
+            'author': quote.find(class_="author").text,
             "bio_link":  quote.find("a") ["href"]
         })
     next_btn = soup.find(class_="next")
@@ -34,7 +34,10 @@ print(quote["author"])
 guess = ""
 
 while guess.lower() != quote["author"].lower() and remaining_guesses > 0:
-    guess = input(f"Who said this quote? Guesses remaining: {remaining_guesses}")
+    guess = input(f"Who said this quote? Guesses remaining: {remaining_guesses}\n")
+    if guess.lower() == quote["author"].lower():
+        print("You guessed correctly, congrats!")
+        break
     remaining_guesses -= 1
     
     if remaining_guesses == 3:
@@ -49,6 +52,4 @@ while guess.lower() != quote["author"].lower() and remaining_guesses > 0:
         last_initial = quote['author'].split(" ")[1][0]
         print(f"Here's a hint: The author's last name starts with {last_initial}")
     else:
-        print(f"Sorry, game over! The answer was {quote["author"]}")
-
-print("After while loop")
+        print(f"Sorry, game over! The answer was {quote['author']}")
