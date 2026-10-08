@@ -4,7 +4,7 @@ user_info = {
     "is_cute": True
 }
 
-# Accessing values
+# Accessing values in a dictionary
 best_wrestler = {
     "first": "Priscilla",
     "last": "Miranda",
