@@ -1,3 +1,9 @@
+from bs4 import BeautifulSoup
+import requests
+from random import choice
+from csv import DictWriter
+
+
 def scrape_quotes():
     all_quotes = []
     url = base_url
@@ -67,3 +73,10 @@ def scrape_quotes():
         else:
             print(f"Sorry, game over! The answer was {quote['author']}")
 
+def write_quotes(quotes):
+    with open("quotes.csv", "w") as file:
+        headers = [text, "author", "bio-link"]
+        csv_writer = DictWriter(file, fieldnames=headers)
+        csv_writer.writeheader()
+        for quote in quotes:
+            csv_writer.writerow(quotes)

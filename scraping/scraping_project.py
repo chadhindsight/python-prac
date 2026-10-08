@@ -1,7 +1,4 @@
-from bs4 import BeautifulSoup
-import requests
-from random import choice
-from csv import DictWriter
+
 from time import sleep
 from scraping_project import scrape_quotes
 
