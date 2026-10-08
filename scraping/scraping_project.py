@@ -12,4 +12,4 @@ base_url = "https://quotes.toscrape.com/"
 url = "/page/1"
 
 quotes = scrape_quotes()
-   
+
