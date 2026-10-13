@@ -6,6 +6,7 @@ from csv import DictWriter
 
 def scrape_quotes():
     all_quotes = []
+    base_url = "https://quotes.toscrape.com/"
     url = base_url
 
     while url:
