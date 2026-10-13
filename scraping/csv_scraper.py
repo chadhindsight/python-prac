@@ -1,86 +1,87 @@
 from bs4 import BeautifulSoup
 import requests
-from time import sleep
+from csv import writer
 from random import choice
-from csv import DictWriter
+import pdb
 
-base_url = "https://quotes.toscrape.com/"
 
-def scrape_quotes():
-    all_quotes = []
-    url = "/page/1"
+response = requests.get("http://quotes.toscrape.com")
 
-    while url:
-        response = requests.get(f"{base_url}{url}")
-        soup = BeautifulSoup(response.text, "html.parser")
-        quotes = soup.find_all(class_="quote")
+soup = BeautifulSoup(response.text, "html.parser")
+quotes = soup.find_all(class_="quote")
 
-        for quote in quotes:
-            all_quotes.append({
-                "text": quote.find(class_="text").text,
-                "author": quote.find(class_="author").text,
-                "bio_link": quote.find("a")["href"]
-            })
+quote_data = []
+for quote in quotes:
+    quote_text = quote.find(class_="text").get_text()
+    quote_author = quote.find(class_="author").get_text()
+    quote_url = quote.find("a")["href"]
+    quote_url_final = f"http://quotes.toscrape.com{quote_url}"
+    quote_data.append([quote_text, quote_author, quote_url_final])
 
-        next_btn = soup.find(class_="next")
-        url = next_btn.find("a")["href"] if next_btn else None
 
-        sleep(2)
+def get_bio(url):
+    response = requests.get(url)
+    # response = requests.get("http://quotes.toscrape.com/author/Andre-Gide/")
+    soup = BeautifulSoup(response.text, "html.parser")
+    author_born_date = soup.find(class_="author-born-date").get_text()
+    author_born_location = soup.find(class_="author-born-location").get_text()
+    print(
+        f"the first hint is: the Author was born {author_born_location} and on {author_born_date}")
 
-    quote = choice(all_quotes)
-    remaining_guesses = 4
 
-    print("Check out this quote:")
-    print(quote["text"])
-    print(quote["author"])
+def quit2():
+    exit()
 
-    guess = ""
 
-    while guess.lower() != quote["author"].lower() and remaining_guesses > 0:
-        guess = input(
-            f"Who said this quote? Guesses remaining: {remaining_guesses}\n"
-        )
+def continue_quiz():
+    # breakpoint()
+    continue_play = str(input("Do you want to continue, Press: y/n"))
+    print(continue_play)
+    if continue_play == "n":
+        quit()
+    elif continue_play == "y":
+        quote_quiz()
+    else:
+        quit()
 
-        if guess.lower() == quote["author"].lower():
-            print("You guessed correctly, congrats!")
-            break
 
-        remaining_guesses -= 1
+def quote_quiz():
+    count = 4
+    random_quote = choice(quote_data)
+    print(random_quote)
+    answer = input("Guess the Author of the quote!!")
 
-        if remaining_guesses == 3:
-            res = requests.get(f"{base_url}{quote['bio_link']}")
-            soup = BeautifulSoup(res.text, "html.parser")
+    if answer == random_quote[1]:
+        print("you guessed the correct answer")
+        continue_quiz()
+    elif answer != random_quote[1]:
+        while answer != random_quote[1] or count > 0:
+            # breakpoint()
+            answer = input("Guess the Author of the quote!!")
+            count -= 1
+            print(count)
+            if answer == random_quote[1]:
+                print("you guessed the correct answer")
+                continue_quiz()
+            elif answer != random_quote[1] and count == 3:
+                print("the answer is incorrect")
+                print(f"you have {count} chances left")
+                get_bio(random_quote[2])
+            elif answer != random_quote[1] and count == 2:
+                print("the answer is incorrect")
+                print(f"you have {count} chances left")
+                print(
+                    f'the first letter of the author"s "first name is" {random_quote[1][0]}')
+            elif answer != random_quote[1] and count == 1:
+                print("the answer is incorrect")
+                print(f"you have {count} chance left")
+                print(
+                    f'the total no of characters in the author"s "name is" {len(random_quote[1])}')
+            else:
+                continue_quiz()
 
-            birth_date = soup.find(class_="author-born-date").get_text()
-            birth_place = soup.find(class_="author-born-location").get_text()
+    else:
+        continue_quiz()
 
-            print(
-                f"Here's a hint: The author was born on "
-                f"{birth_date} {birth_place}"
-            )
 
-        elif remaining_guesses == 2:
-            print(
-                f"Here's a hint: The author's first name starts with "
-                f"{quote['author'][0]}"
-            )
-
-        elif remaining_guesses == 1:
-            last_initial = quote["author"].split(" ")[1][0]
-            print(
-                f"Here's a hint: The author's last name starts with "
-                f"{last_initial}"
-            )
-
-        else:
-            print(f"Sorry, game over! The answer was {quote['author']}")
-
-def write_quotes(quotes):
-    with open("quotes.csv", "w") as file:
-        headers = [text, "author", "bio-link"]
-        csv_writer = DictWriter(file, fieldnames=headers)
-        csv_writer.writeheader()
-        for quote in quotes:
-            csv_writer.writerow(quotes)
-quotes = scrape_quotes()
-write_quotes(quotes)
+quote_quiz()
