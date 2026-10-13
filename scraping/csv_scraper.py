@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
+from time import sleep
 from random import choice
 from csv import DictWriter
 
@@ -24,7 +25,7 @@ def scrape_quotes():
         next_btn = soup.find(class_="next")
         url = next_btn.find("a")["href"] if next_btn else None
 
-        # sleep(2)
+        sleep(2)
 
     quote = choice(all_quotes)
     remaining_guesses = 4
@@ -81,3 +82,5 @@ def write_quotes(quotes):
         csv_writer.writeheader()
         for quote in quotes:
             csv_writer.writerow(quotes)
+quotes = scrape_quotes()
+write_quotes(quotes)
