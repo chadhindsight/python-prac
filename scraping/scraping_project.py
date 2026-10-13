@@ -1,6 +1,6 @@
 
 from time import sleep
-from scraping_project import scrape_quotes
+from csv_scraper import scrape_quotes
 
 
 # List that will store all quotes received 
