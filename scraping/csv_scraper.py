@@ -3,11 +3,11 @@ import requests
 from random import choice
 from csv import DictWriter
 
+base_url = "https://quotes.toscrape.com/"
 
 def scrape_quotes():
     all_quotes = []
-    base_url = "https://quotes.toscrape.com/"
-    url = base_url
+    url = "/page/1"
 
     while url:
         response = requests.get(f"{base_url}{url}")
