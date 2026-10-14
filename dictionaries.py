@@ -4,6 +4,7 @@ user_info = {
     "is_cute": True
 }
 
+
 # Accessing values in a dictionary
 best_wrestler = {
     "first_name": "Priscilla",
@@ -12,9 +13,8 @@ best_wrestler = {
     "finishers": ["Lasso from El Paso", "Crucifix Powerbomb", "Flatliner"]
 }
 
-my_fave = f"The very best wrestler is {best_wrestler['first']} {best_wrestler['last']}"
-print(my_fave)
-print(user_info['name'])
+my_fave = f"The best wrestler is {best_wrestler['first_name']} {best_wrestler['last_name']}"
+
 
 # DON'T TOUCH PLEASE!
 donations = dict(tam=25.5, lena=89.99, chuck=13.0, linus=99.5, steve=150.0, lucy=50.25, harrison=10.0)
