@@ -7,13 +7,13 @@ user_info = {
 
 # Accessing values in a dictionary
 best_wrestler = {
-    "first_name": "Priscilla",
-    "last_name": "Miranda",
+    "first": "Priscilla",
+    "last": "Miranda",
     "age": 25,
     "finishers": ["Lasso from El Paso", "Crucifix Powerbomb", "Flatliner"]
 }
 
-my_fave = f"The best wrestler is {best_wrestler['first_name']} {best_wrestler['last_name']}"
+my_fave = f"The best wrestler is {best_wrestler['first']} {best_wrestler['last']}"
 
 
 # DON'T TOUCH PLEASE!
