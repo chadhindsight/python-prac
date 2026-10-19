@@ -13,7 +13,7 @@ best_wrestler = {
     "finishers": ["Lasso from El Paso", "Crucifix Powerbomb", "Flatliner"]
 }
 
-my_fave = f"The best wrestler is {best_wrestler['first_name']} {best_wrestler['last_name']} and their finishers are {best_wrestler['finishers']}"
+my_fave = f"The best wrestler is {best_wrestler['first_name']} {best_wrestler['last_name']}, age {best_wrestler['age']}, and their finishers are {best_wrestler['finishers']}"
 print(my_fave)
 
 # DON'T TOUCH PLEASE!
