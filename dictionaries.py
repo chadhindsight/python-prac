@@ -10,7 +10,7 @@ best_wrestler = {
     "first_name": "Priscilla",
     "last_name": "Miranda",
     "age": 25,
-    "finishers": ["Lasso from El Paso", "Crucifix Powerbomb", "Flatliner"]
+    "finishers": ["Lasso from El Paso", "Flatliner", "Crucifix Powerbomb"]
 }
 
 my_fave = f"The best wrestler is {best_wrestler['first_name']} {best_wrestler['last_name']}, age {best_wrestler['age']}, and their finishers are {best_wrestler['finishers']}"
