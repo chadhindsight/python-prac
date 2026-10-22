@@ -2,7 +2,6 @@ from bs4 import BeautifulSoup
 import requests
 from csv import writer
 from random import choice
-import pdb
 
 
 response = requests.get("http://quotes.toscrape.com")
