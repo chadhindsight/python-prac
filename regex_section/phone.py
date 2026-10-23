@@ -1,7 +1,7 @@
 import re
 # Returns first instance of phone number pattern:
 def extract_phone(input):
-	phone_regex = re.compile(r'\b\d{3} \d{3}-\d{4}\b')
+	phone_regex = re.compile(r'\b\d{3} \d{3}-\d{
 	match = phone_regex.search(input)
 	if match:
 		return match.group()
