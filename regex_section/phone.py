@@ -38,9 +38,5 @@ print(extract_phone("432 567-8976"))
 print(extract_all_phones("my number is 432 567-8976 or call me at 345 666-7899"))
 print(extract_all_phones("my number is 432 56"))
 
-print(is_valid_phone("432 567-8976"))
-print(is_valid_phone("432 567-8976 ads"))
-print(is_valid_phone("asd 432 567-8976 d"))
-
 
 
