@@ -1,4 +1,4 @@
--- Example of a basic table creation in sqlite
+-- Example of a basic table creation in sqlite3
 CREATE TABLE dogs (
     name TEXT,
     breed TEXT,
