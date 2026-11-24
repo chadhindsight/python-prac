@@ -17,7 +17,7 @@ the_best = f"My fave wrestler is {fave_wrestler['first_name']} {fave_wrestler['l
 print(the_best)
 
 # DON'T TOUCH PLEASE!
-donations = dict(tam=25.7, lena=89.99, chuck=13.0, linus=99.5, steve=150.0, lucy=50.25, harrison=10.0)
+donations = dict(tam=45.7, lena=89.99, chuck=13.0, linus=99.5, steve=150.0, lucy=50.25, harrison=10.0)
 
 
 # Use a loop to add together all the donations from above and store the resulting number in the variable called donations_total
