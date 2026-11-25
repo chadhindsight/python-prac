@@ -5,15 +5,15 @@ pet_info = {
 }
 
 
-# Accessing values in a dictionary.
-fave_wrestler = {
+# Accessing values in a dictionary
+best_wrestler = {
     "first_name": "Priscilla",
     "last_name": "Miranda",
     "age": 25,
     "finishers": ["Lasso from El Paso", "Flatliner", "Crucifix Powerbomb"]
 }
 
-the_best = f"My fave wrestler is {fave_wrestler['first_name']} {fave_wrestler['last_name']}, age {fave_wrestler['age']}, and their finishers are {fave_wrestler['finishers']}"
+the_best = f"The best wrestler is {best_wrestler['first_name']} {best_wrestler['last_name']}, age {best_wrestler['age']}, and their finishers are {best_wrestler['finishers']}"
 print(the_best)
 
 # DON'T TOUCH PLEASE!
