@@ -28,7 +28,7 @@ for val in donations.values():
 
 print(donations_total)    
 
-# Example of how to check for a specific key or value in a dictionary
+# Checking for a specific key or value in a dictionary
 "age" in pet_info.keys() 
 8 in pet_info.values()
 
