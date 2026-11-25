@@ -5,7 +5,7 @@ pet_info = {
 }
 
 
-# Accessing values in a dictionary
+# Accessing values in a dictionary.
 fave_wrestler = {
     "first_name": "Priscilla",
     "last_name": "Miranda",
